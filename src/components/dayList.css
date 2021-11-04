@@ -1,0 +1,8 @@
+.day-list {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1080px;  
+  padding: 0;
+  margin: 75px auto 0;
+  list-style: none;
+}
