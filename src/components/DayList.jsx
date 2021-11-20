@@ -10,31 +10,279 @@ export default class DayList extends React.Component{
       day1: {
         // expanded: false,
         tasks: "кардио грудь бицепс пресс сауна",
-        // finished: false
+        general: [
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+        ],
+        secondary: [
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+        ],
       },
       day2: {
         // expanded: false,
         tasks: "кардио сауна",
+        general: [
+          {
+            title: "кардио",
+            sets: 1, 
+            count: 1,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          }
+        ]
         // finished: false
       },
       day3: {
         // expanded: false,
         tasks: "кардио спина трицепс пресс сауна",
+        general: [
+          {
+            title: "подтягивания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+        ],
+        secondary: [
+          {
+            title: "подтягивания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "отжимания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+        ],
         // finished: false
       },
       day4: {
         // expanded: false,
         tasks: "кардио сауна",
+        general: [
+          {
+            title: "кардио",
+            sets: 1, 
+            count: 1,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          }
+        ]
         // finished: false
       },
       day5: {
         // expanded: false,
         tasks: "кардио ноги плечи пресс сауна",
+        general: [
+          {
+            title: "приседания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "приседания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "приседания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "приседания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "приседания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+        ],
+        secondary: [
+          {
+            title: "приседания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "приседания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "приседания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "приседания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+          {
+            title: "приседания",
+            sets: 3, 
+            count: 15,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          },
+        ],
         // finished: false
       },
       day6: {
         // expanded: false,
         tasks: "кардио сауна",
+        general: [
+          {
+            title: "кардио",
+            sets: 1, 
+            count: 1,
+            img: "https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg",
+            finished: false
+          }
+        ]
         // finished: false
       },
       day7: {

@@ -1,0 +1,51 @@
+.task {
+  width: 100%;
+  margin: 0.25em;
+  display: flex;
+  flex-flow: column
+}
+.task .taskTitle {
+  font-size: 0.75em;
+  font-weight: normal;
+  text-align: left;
+  /* margin-left: 0.15em; */
+}
+.task .container{
+  width: 100%;
+  display: flex;
+  flex-flow: row-reverse
+}
+.imgStyle {
+  width: 100%; 
+  /* width: 50%; */
+  height: 100%;
+  margin: 0 auto
+}
+.footerStyle {
+  width: 100%; 
+  /* margin: 0.25em auto; */
+  margin: 5px;
+  display: flex;
+  flex-flow: column; 
+  justify-content: space-between;
+  align-items: stretch;
+  flex: 0 1 50%
+}
+.footerStyle>div{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputStyle {
+  width: 3em; 
+  height: 2.5em; 
+  margin: 0.25em;
+}
+.task .title {
+  font-size: 0.5em;
+  font-weight: normal;
+  font-weight: light;
+  color: #333;
+  /* color: #333; */
+}

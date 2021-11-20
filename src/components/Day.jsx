@@ -39,10 +39,35 @@ export default class Day extends React.Component{
   //  update onClicked for move up state data
 
   //  extend design fitness tasks - checkboxes, photo, sets, weights
-
-
+  
   render(){
-    console.log(this.props);
+    let tasks1;
+    let tasks2;
+    // console.log(this.props);
+    console.log(this.props.workout.general);
+    if(this.props.workout?.general){
+      tasks1 = this.props.workout.general.map( task => {
+        console.log("Day task: ", task);
+        return (
+          <Task task={task}/>
+          // <div style={style}>
+          //   Task: {task.title} {task.sets} {task.count} {task.finished}
+          // </div>
+        )
+      })
+    }
+    if(this.props.workout?.secondary){
+      tasks2 = this.props.workout.secondary.map( task => {
+        console.log("Day task: ", task);
+        return (
+          <Task task={task}/>
+          // <div style={style}>
+          //   Task: {task.title} {task.sets} {task.count} {task.finished}
+          // </div>
+        )
+      })
+    }
+    
     let {name, workout} = this.props;
     // let [expanded, tasks, finished] = workout;
     return (
@@ -51,23 +76,19 @@ export default class Day extends React.Component{
           <span>{name}</span>
           <span>►</span>
         </header>
+        {/* TODO - set as diff component -> DayTasks */}
         <section className={ this.state.expanded ? "day-fitness-tasks" : "day-fitness-tasks hide"}>
-          {workout.tasks + this.state.finished} 
-          <div className="container-tasks">
-            <h3 className="title">General Tasks:</h3>
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
+          {/* {workout.tasks + this.state.finished}  */}
+          <div className="container-tasks general">
+            <p className="title">General Tasks:</p>
+            {tasks1}
           </div>
-          <div className="container-tasks">
-            <h3 className="title">Secondary Tasks:</h3>
-            <Task />
-            <Task />
-            <Task />
+          <div className="container-tasks secondary">
+            <p className="title">Secondary Tasks:</p>
+            {tasks2}
           </div>
         </section>
+
       </li>
     )
   }
