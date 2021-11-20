@@ -1,8 +1,8 @@
-import React from "react";
+import React, {Component} from "react";
 import "./day.css";
 import Task from "./Task.jsx";
 
-export default class Day extends React.Component{
+export default class Day extends Component{
 
   constructor(props){
     super(props);
@@ -10,7 +10,7 @@ export default class Day extends React.Component{
     this.state = {
       expanded: false,
       // tasks,
-      finished: false
+      // finished: false
     };
 
     this.onClickHeader = this.onClickHeader.bind(this);
@@ -42,28 +42,28 @@ export default class Day extends React.Component{
   
   render(){
     let tasks1;
-    let tasks2;
+    let tasks2, general;
     // console.log(this.props);
-    console.log(this.props.workout.general);
+    console.log("Day props: ",this.props);
+
     if(this.props.workout?.general){
-      tasks1 = this.props.workout.general.map( task => {
-        console.log("Day task: ", task);
+      tasks1 = this.props.workout.general.map( (task,i) => {
+        // console.log("%cDay task: ","background: tomato", task);
         return (
-          <Task task={task}/>
-          // <div style={style}>
-          //   Task: {task.title} {task.sets} {task.count} {task.finished}
-          // </div>
+          <Task task={task}
+            key={ i + "_" + Math.random()}
+          />
         )
       })
     }
+
     if(this.props.workout?.secondary){
-      tasks2 = this.props.workout.secondary.map( task => {
-        console.log("Day task: ", task);
+      tasks2 = this.props.workout.secondary.map( (task,i)=> {
+        // console.log("%cDay task: ","background: tomato", task);
         return (
-          <Task task={task}/>
-          // <div style={style}>
-          //   Task: {task.title} {task.sets} {task.count} {task.finished}
-          // </div>
+          <Task task={task}
+            key={ i + "_" + Math.random()}
+          />
         )
       })
     }
@@ -78,11 +78,11 @@ export default class Day extends React.Component{
         </header>
         {/* TODO - set as diff component -> DayTasks */}
         <section className={ this.state.expanded ? "day-fitness-tasks" : "day-fitness-tasks hide"}>
-          {/* {workout.tasks + this.state.finished}  */}
           <div className="container-tasks general">
             <p className="title">General Tasks:</p>
             {tasks1}
           </div>
+          {general}
           <div className="container-tasks secondary">
             <p className="title">Secondary Tasks:</p>
             {tasks2}
