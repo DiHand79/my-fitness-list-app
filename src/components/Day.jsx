@@ -1,14 +1,16 @@
 import React from "react";
 import "./day.css";
+import Task from "./Task.jsx";
 
 export default class Day extends React.Component{
 
   constructor(props){
     super(props);
+
     this.state = {
       expanded: false,
-      data: this.props.workout,
-      finished: false 
+      // tasks,
+      finished: false
     };
 
     this.onClickHeader = this.onClickHeader.bind(this);
@@ -23,7 +25,7 @@ export default class Day extends React.Component{
   }
 
   onClickHeader(){
-    console.log("onClick");
+    // console.log("onClick");
     // this.setState({data: "clicked"}) // simple async BUT no synhronic data garanty
     this.setState(prevState => ({  // prevState, state, props
         expanded: !prevState.expanded,
@@ -40,14 +42,31 @@ export default class Day extends React.Component{
 
 
   render(){
+    console.log(this.props);
+    let {name, workout} = this.props;
+    // let [expanded, tasks, finished] = workout;
     return (
       <li className="day-content">
         <header className="day-header" onClick={this.onClickHeader}>
-          <span>{this.props.name}</span>
+          <span>{name}</span>
           <span>►</span>
         </header>
         <section className={ this.state.expanded ? "day-fitness-tasks" : "day-fitness-tasks hide"}>
-          {this.state.data + this.state.finished} 
+          {workout.tasks + this.state.finished} 
+          <div className="container-tasks">
+            <h3 className="title">General Tasks:</h3>
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+          </div>
+          <div className="container-tasks">
+            <h3 className="title">Secondary Tasks:</h3>
+            <Task />
+            <Task />
+            <Task />
+          </div>
         </section>
       </li>
     )

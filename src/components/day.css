@@ -47,3 +47,15 @@
   overflow: hidden;
   visibility: hidden;
 }
+
+.container-tasks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-tasks>h3 {
+  width: 100%;
+  text-align: center;
+}

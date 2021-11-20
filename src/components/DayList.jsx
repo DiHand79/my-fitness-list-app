@@ -8,29 +8,53 @@ export default class DayList extends React.Component{
     super(props);
     this.state = {
       day1: {
-        expanded: false,
-        tasks: "кардио грудь бицепс сауна",
-        finished: false
+        // expanded: false,
+        tasks: "кардио грудь бицепс пресс сауна",
+        // finished: false
       },
-      day2: "кардио сауна",
-      day3: "кардио спина трицепс сауна",
-      day4: "кардио сауна",
-      day5: "кардио ноги пресс сауна",
-      day6: "кардио сауна",
-      day7: "отдых",
+      day2: {
+        // expanded: false,
+        tasks: "кардио сауна",
+        // finished: false
+      },
+      day3: {
+        // expanded: false,
+        tasks: "кардио спина трицепс пресс сауна",
+        // finished: false
+      },
+      day4: {
+        // expanded: false,
+        tasks: "кардио сауна",
+        // finished: false
+      },
+      day5: {
+        // expanded: false,
+        tasks: "кардио ноги плечи пресс сауна",
+        // finished: false
+      },
+      day6: {
+        // expanded: false,
+        tasks: "кардио сауна",
+        // finished: false
+      },
+      day7: {
+        // expanded: false,
+        tasks: "отдіх",
+        // finished: false
+      },
     }
   }
 
   render(){
     return(
       <div className="day-list">
-        <Day name="Пн" workout={this.state.day1}/>
-        <Day name="Вт" workout={this.state.day2}/>
-        <Day name="Ср" workout={this.state.day3}/>
-        <Day name="Чт" workout={this.state.day4}/>
-        <Day name="Пт" workout={this.state.day5}/>
-        <Day name="Сб" workout={this.state.day6}/>
-        <Day name="Вс" workout={this.state.day7}/>
+        <Day name="Пн" workout={this.state.day1} id={Math.random()}/>
+        <Day name="Вт" workout={this.state.day2} id={Math.random()}/>
+        <Day name="Ср" workout={this.state.day3} id={Math.random()}/>
+        <Day name="Чт" workout={this.state.day4} id={Math.random()}/>
+        <Day name="Пт" workout={this.state.day5} id={Math.random()}/>
+        <Day name="Сб" workout={this.state.day6} id={Math.random()}/>
+        <Day name="Вс" workout={this.state.day7} id={Math.random()}/>
       </div>
     )
   }
