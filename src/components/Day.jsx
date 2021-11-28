@@ -68,7 +68,7 @@ export default class Day extends Component{
       })
     }
     
-    let {name, workout} = this.props;
+    let {name} = this.props;
     // let [expanded, tasks, finished] = workout;
     return (
       <li className="day-content">
