@@ -9,15 +9,13 @@ export default class Day extends Component{
 
     this.state = {
       expanded: false,
-      // tasks,
-      // finished: false
     };
 
     this.onClickHeader = this.onClickHeader.bind(this);
   }
   
   componentDidMount(){
-    console.log("Component Day did mount");
+    console.log("Component Day did mount", this.props);
   }
 
   coponentWillUnmount(){
@@ -68,12 +66,11 @@ export default class Day extends Component{
       })
     }
     
-    let {name} = this.props;
     // let [expanded, tasks, finished] = workout;
     return (
       <li className="day-content">
         <header className="day-header" onClick={this.onClickHeader}>
-          <span>{name}</span>
+          <span>{this.props.workout.day}</span>
           <span>►</span>
         </header>
         {/* TODO - set as diff component -> DayTasks */}

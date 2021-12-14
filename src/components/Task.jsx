@@ -7,6 +7,7 @@ class Task extends Component  {
   // TODO create 2 component:
   // 1 FULL day 
   // 2 Light Day - cardio+ 
+
   
   fullDay = {
               finished: false,
@@ -26,7 +27,7 @@ class Task extends Component  {
   state = this.dayTask;
 
   onFinished = ()=>{
-    console.log(`Finished ${this.props.task.title} : ${this.state.finished}`)
+    // console.log(`Finished ${this.props.task.title} : ${this.state.finished}`)
     this.setState( prevState => ({
       finished: !prevState.finished
       })
@@ -34,31 +35,31 @@ class Task extends Component  {
   }
 
   onChangeSets = (e)=>{
-    console.log("Changed: ", e.target.value);
+    // console.log("Changed: ", e.target.value);
     this.setState( () => ({sets: e.target.value}))
   }
 
   onChangeCount = (e)=>{
-    console.log("Changed: ", e.target.value);
+    // console.log("Changed: ", e.target.value);
     this.setState( prevState => ({
       count: e.target.value
     }))
   }
 
   onChangeWeight = (e)=>{
-    console.log("Changed: ", e.target.value);
+    // console.log("Changed: ", e.target.value);
     this.setState( prevState => ({
       weight: e.target.value
     }))
   }
 
   onChangeTime = (e)=>{
-    console.log("Changed: ", e.target.value);
+    // console.log("Changed: ", e.target.value);
     this.setState( () => ({time: e.target.value}))
   }
 
   render(){
-    console.log( this.props.task.title, " dayTask ", this.dayTask);
+    // console.log( this.props.task.title, " dayTask ", this.dayTask);
     // let {title, sets, count, weight, img, finished} = task
     const style = {
       color: this.state.finished ? "darkblue" : "#333",
@@ -77,34 +78,41 @@ class Task extends Component  {
             {/* {this.props.task.title.split(" ")[1] === "сауна" ? this.lightDay : this.fullDay} */}
             
             <div>
-              <p className="title">{this.test ? "Время:" : "Подходы:"}</p>
-              <input className="inputStyle" 
-                      type="number" 
-                      // step="1" 
-                      onChange={this.test ? this.onChangeTime : this.onChangeSets}
-                      value={this.test ? this.state.time : this.state.sets}/>
+              <label className="title">{this.test ? "Время:" : "Подходы:"}
+                <input className="inputStyle" 
+                        type="number" 
+                        // step="1" 
+                        onChange={this.test ? this.onChangeTime : this.onChangeSets}
+                        value={this.test ? this.state.time : this.state.sets}/>
+                </label>
             </div>
-            {this.test ? null : ( <div>
-              <p className="title">Кол-во:</p>
-              <input className="inputStyle" 
-                      type="number" 
-                      onChange={this.onChangeCount}
-                      value={this.state.count}/>
-            </div>)}
-           
+            {this.test ? 
+                  null : 
+              ( <div>
+                <label className="title">Кол-во:
+                  <input className="inputStyle" 
+                          type="number" 
+                          onChange={this.onChangeCount}
+                          value={this.state.count}/>
+                </label>        
+              </div>)
+            }
+            
             <div>
-              <p className="title"> Вес:</p>
-              <input className="inputStyle" 
-                      type="number" 
-                      onChange={this.onChangeWeight}
-                      value={ this.test ? this.state.weight : this.state.weight}/>
+              <label className="title"> Вес:
+                <input className="inputStyle" 
+                        type="number" 
+                        onChange={this.onChangeWeight}
+                        value={ this.test ? this.state.weight : this.state.weight}/>
+              </label>
             </div>
             <div>
-              <p className="title">Фсе:</p>
-              <input className="inputStyle" type="checkbox" 
-                    checked={this.state.finished} 
-                    onChange={this.onFinished}
-              />
+              <label className="title">Фсе:
+                <input className="inputStyle" type="checkbox" 
+                      checked={this.state.finished} 
+                      onChange={this.onFinished}
+                />
+              </label>
             </div>
           </section>
           {/* <a href={this.task.img}> */}

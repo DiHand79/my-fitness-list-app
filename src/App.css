@@ -11,16 +11,18 @@
 }
 .App-header {
   text-align: center;
-  background-color: crimson;
-  color: #fff;
+  background-color: #000;
+  color: #ccc;
   /* min-height: 2em; */
-  padding: 1em;
+  padding: .5em 0.25em;
   font-size: 1.5em;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   box-shadow: 0 6px 3px #00000025;
+  display: flex;
+  justify-content: space-between;
 }
 .App-header>span {
   padding: 0.5em;
