@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import "./day.css";
 import Task from "./Task.jsx";
+import "./day.css";
 
 export default class Day extends Component{
 
@@ -14,13 +14,13 @@ export default class Day extends Component{
     this.onClickHeader = this.onClickHeader.bind(this);
   }
   
-  componentDidMount(){
-    console.log("Component Day did mount", this.props);
-  }
+  // componentDidMount(){
+  //   console.log("Component Day did mount", this.props);
+  // }
 
-  coponentWillUnmount(){
-    console.log("Component Day will unmount");
-  }
+  // coponentWillUnmount(){
+  //   console.log("Component Day will unmount");
+  // }
 
   onClickHeader(){
     // console.log("onClick");
@@ -40,9 +40,9 @@ export default class Day extends Component{
   
   render(){
     let tasks1;
-    let tasks2, general;
+    let tasks2;
     // console.log(this.props);
-    console.log("Day props: ",this.props);
+    console.log("Day props: ", this.props);
 
     if(this.props.workout?.general){
       tasks1 = this.props.workout.general.map( (task,i) => {
@@ -65,11 +65,14 @@ export default class Day extends Component{
         )
       })
     }
-    
+
+    let test = this.props.workout.tasks.split(" ")[1] === "сауна";
+    console.log("test", test);
     // let [expanded, tasks, finished] = workout;
     return (
       <li className="day-content">
-        <header className="day-header" onClick={this.onClickHeader}>
+        <header className={`day-header${test ? "" : " power-day"}`} 
+                onClick={this.onClickHeader}>
           <span>{this.props.workout.day}</span>
           <span>►</span>
         </header>
@@ -79,7 +82,7 @@ export default class Day extends Component{
             <p className="title">General Tasks:</p>
             {tasks1}
           </div>
-          {general}
+
           <div className="container-tasks secondary">
             <p className="title">Secondary Tasks:</p>
             {tasks2}

@@ -1,0 +1,14 @@
+.timer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  z-index: 999;
+  padding: 0.25em;
+  /* display: flex; 
+  flex-flow: row; */
+  color: white;
+  background-color: #000000cc;
+}

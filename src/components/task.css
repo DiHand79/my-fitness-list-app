@@ -31,11 +31,11 @@
   align-items: stretch;
   flex: 0 1 50%
 }
-.footerStyle>div{
+.footerStyle>label{
   display: flex;
-  /* flex-flow: row; */
-  flex-flow: column;
-  justify-content: space-between;
+  flex-flow: row;
+  /* flex-flow: column; */
+  justify-content: end;
   align-items: center;
 }
 .inputStyle {

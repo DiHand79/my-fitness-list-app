@@ -1,5 +1,6 @@
 import React from "react"
 // import { useState, useEffect } from "react/hoocks";
+import "./clock.css";
 
 export default class Clock extends React.Component {
 
@@ -23,9 +24,14 @@ export default class Clock extends React.Component {
 
   render(){
     return(
-      <div>
-        <div className="timer days"> {this.state.timer.toLocaleDateString()} </div>
-        <div className="timer hours"> {this.state.timer.toLocaleTimeString()} </div>
+      <div className="timer-container">
+          {this.state.timer.toLocaleDateString() + "  :  " + this.state.timer.toLocaleTimeString()} 
+        {/* <div className="timer days"> 
+          {this.state.timer.toLocaleDateString()} 
+        </div> */}
+        {/* <div className="timer hours"> 
+          {this.state.timer.toLocaleTimeString()} 
+        </div> */}
       </div>
     )
   }

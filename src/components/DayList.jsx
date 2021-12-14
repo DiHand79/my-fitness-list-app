@@ -8,7 +8,7 @@ export default function DayList(props) {
   // const weekDay = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
 
   const days = props.state.map( (day,i) => {
-    console.log("day", day);
+    // console.log("day", day);
     return <Day workout={day} 
         key={ i + "_" + Math.random()}
     />

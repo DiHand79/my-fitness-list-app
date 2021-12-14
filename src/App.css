@@ -21,8 +21,8 @@
   left: 0;
   right: 0;
   box-shadow: 0 6px 3px #00000025;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 .App-header>span {
   padding: 0.5em;

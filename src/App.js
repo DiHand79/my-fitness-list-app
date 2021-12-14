@@ -7,8 +7,8 @@ import './App.css';
 // img sources: https://xmuskul.ru
 // https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg
 
-// console.log("workout: ", workout);//work
-// console.log("PRE localStorage.workout", localStorage?.workout, localStorage?.workout?.length)//work
+{/* <script src="https://unpkg.com/formik/dist/formik.umd.production.min.js"></script> */}
+// https://formik.org/docs/overview
 
 class App extends React.Component {
   constructor(props){
@@ -35,9 +35,9 @@ class App extends React.Component {
           <span>
             {this.title}
           </span>
-          <Clock />
         </header>
         <DayList state={this.state.workout}/>
+        <Clock />
       </div>
     );
   }

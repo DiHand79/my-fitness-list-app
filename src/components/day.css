@@ -9,27 +9,42 @@
   width: 100%;
   padding: 1rem;
   text-align: center;
-  background-color: #777;
-  color: #eee;
+  background-color: rgb(0, 20, 134);
+  color: #ccc;
   font-size: 2em;
   text-decoration: none;
   transition: all 0.25s ease-in-out;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   box-shadow: 0 6px 3px #00000025;
+  border-radius:  3px;
+  min-height: calc(75vh / 7);
 }
 
 .day-header:hover {
-  background-color: #999;
+  background-color: rgb(0, 152, 199);
+  /* color: #333; */
   color: #fff;
+  border-radius: 150px;
 }
 
 .day-header>span{
   margin: 0 1.5em;
 }
 
+.power-day {
+  background-color: rgb(140, 0, 153);
+  color: #ccc;
+}
+
+.power-day:hover {
+  background-color: rgb(185, 0, 139);
+  color: #fff;
+}
+
 .day-fitness-tasks{
-  background-color: #eee;
+  background-color: #ccc;
   color: #333;
   /* padding: 0.5em; */
   width: 100%;
@@ -46,6 +61,7 @@
   font-size: 0;
   overflow: hidden;
   visibility: hidden;
+  border-radius: 3px;
 }
 
 .container-tasks {
@@ -67,10 +83,21 @@
 }
 
 .general {
-  background-color: blue;
+  background-color: rgb(0, 33, 141);
+  /* color: white; */
+}
+
+.general > .title {
+  /* background-color: blue; */
   color: white;
 }
+
 .secondary {
-  background-color: green;
+  background-color: rgb(0, 87, 61);
+  /* color: rgb(164, 255, 164); */
+}
+
+.secondary>.title {
+  /* background-color: green; */
   color: rgb(164, 255, 164);
 }
