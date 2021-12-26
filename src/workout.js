@@ -63,27 +63,27 @@ export const workout = JSON.stringify([
             }
           ]
         },
-        {
-          day: "Вт",
-          tasks: "кардио сауна",
-          general: [
-            {
-              title: "кардио",
-              sets: 1, 
-              count: 40,
-              weight: 93,
-              img: "https://content.rozetka.com.ua/goods/images/big/127280387.jpg",
-            }
-          ],
-          secondary: [
-            {
-              title: "сауна",
-              sets: 3, 
-              count: 5,
-              img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Sauna_2.jpg",
-            }
-          ]
-        },
+        // {
+        //   day: "Вт",
+        //   tasks: "кардио сауна",
+        //   general: [
+        //     {
+        //       title: "кардио",
+        //       sets: 1, 
+        //       count: 40,
+        //       weight: 93,
+        //       img: "https://content.rozetka.com.ua/goods/images/big/127280387.jpg",
+        //     }
+        //   ],
+        //   secondary: [
+        //     {
+        //       title: "сауна",
+        //       sets: 3, 
+        //       count: 5,
+        //       img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Sauna_2.jpg",
+        //     }
+        //   ]
+        // },
         {
           day: "Ср",
           tasks: "кардио спина трицепс пресс сауна",
@@ -162,27 +162,27 @@ export const workout = JSON.stringify([
             },
           ]
         },
-        {
-          day: "Чт",
-          tasks: "кардио сауна",
-          general: [
-            {
-              title: "кардио",
-              sets: 1, 
-              count: 40,
-              weight: 93,
-              img: "https://content.rozetka.com.ua/goods/images/big/127280387.jpg",
-            }
-          ],
-          secondary: [
-            {
-              title: "сауна",
-              sets: 3, 
-              count: 5,
-              img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Sauna_2.jpg",
-            }
-          ]
-        },
+        // {
+        //   day: "Чт",
+        //   tasks: "кардио сауна",
+        //   general: [
+        //     {
+        //       title: "кардио",
+        //       sets: 1, 
+        //       count: 40,
+        //       weight: 93,
+        //       img: "https://content.rozetka.com.ua/goods/images/big/127280387.jpg",
+        //     }
+        //   ],
+        //   secondary: [
+        //     {
+        //       title: "сауна",
+        //       sets: 3, 
+        //       count: 5,
+        //       img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Sauna_2.jpg",
+        //     }
+        //   ]
+        // },
         {
           day: "Пт",
           tasks: "кардио ноги плечи пресс сауна",
@@ -261,27 +261,27 @@ export const workout = JSON.stringify([
             },
           ]
         },
-        {
-          day: "Сб",
-          tasks: "кардио сауна",
-          general: [
-            {
-              title: "кардио",
-              sets: 1, 
-              count: 40,
-              weight: 93,
-              img: "https://content.rozetka.com.ua/goods/images/big/127280387.jpg",
-            }
-          ],
-          secondary: [
-            {
-              title: "сауна",
-              sets: 3, 
-              count: 5,
-              img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Sauna_2.jpg",
-            }
-          ]
-        },
+        // {
+        //   day: "Сб",
+        //   tasks: "кардио сауна",
+        //   general: [
+        //     {
+        //       title: "кардио",
+        //       sets: 1, 
+        //       count: 40,
+        //       weight: 93,
+        //       img: "https://content.rozetka.com.ua/goods/images/big/127280387.jpg",
+        //     }
+        //   ],
+        //   secondary: [
+        //     {
+        //       title: "сауна",
+        //       sets: 3, 
+        //       count: 5,
+        //       img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Sauna_2.jpg",
+        //     }
+        //   ]
+        // },
       ]
 )
 

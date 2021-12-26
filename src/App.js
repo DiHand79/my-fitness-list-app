@@ -7,7 +7,7 @@ import './App.css';
 // img sources: https://xmuskul.ru
 // https://xmuskul.ru/uprazhneniya/wp-content/uploads/2017/05/prisedaniya.jpg
 
-{/* <script src="https://unpkg.com/formik/dist/formik.umd.production.min.js"></script> */}
+// <script src="https://unpkg.com/formik/dist/formik.umd.production.min.js"></script>
 // https://formik.org/docs/overview
 
 class App extends React.Component {

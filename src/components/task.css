@@ -34,8 +34,7 @@
 .footerStyle>label{
   display: flex;
   flex-flow: row;
-  /* flex-flow: column; */
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .inputStyle {
