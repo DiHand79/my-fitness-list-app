@@ -2,6 +2,7 @@
 import React from "react";
 import DayList from "./components/DayList.jsx";
 import Clock from "./components/Clock.jsx";
+import ScrollUp from "./components/ScrollUp.jsx";
 import {workout} from "./workout.js";
 import './App.css';
 // img sources: https://xmuskul.ru
@@ -38,6 +39,7 @@ class App extends React.Component {
         </header>
         <DayList state={this.state.workout}/>
         <Clock />
+        <ScrollUp />
       </div>
     );
   }

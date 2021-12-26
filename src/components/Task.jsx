@@ -6,7 +6,7 @@ class Task extends Component  {
   
   // TODO create 2 component:
   // 1 FULL day 
-  // 2 Light Day - cardio+ 
+  //     2 Light Day - cardio+ 
   // 3 anhor to header opened day
   // 4 if open one day - other - collapsed
   // 5 global state 
