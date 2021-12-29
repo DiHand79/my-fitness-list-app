@@ -9,7 +9,7 @@ export default function ScrollUp (){
   
   function scrollUp (e){
     e.preventDefault();
-    window.scroll(0, 100);
+    window.scroll(0, 20);
     // const btnUp = document.querySelector('.App-header')
     // window.scroll(0, btnUp.offsetBottom);
   }
