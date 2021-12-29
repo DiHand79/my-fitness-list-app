@@ -68,7 +68,7 @@ class Task extends Component  {
       // color: this.state.finished ? "darkblue" : "#333",
       background: this.state.finished ? "lightblue" : "white",
     };
-    console.log(this.props.task.title, this.test, this.state);
+    // console.log(this.props.task.title, this.test, this.state);
     return(
       <div className="task" style={style}>
 

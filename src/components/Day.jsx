@@ -42,7 +42,7 @@ export default class Day extends Component{
     let tasks1;
     let tasks2;
     // console.log(this.props);
-    console.log("Day props: ", this.props);
+    // console.log("Day props: ", this.props);
 
     if(this.props.workout?.general){
       tasks1 = this.props.workout.general.map( (task,i) => {
@@ -67,7 +67,7 @@ export default class Day extends Component{
     }
 
     let test = this.props.workout.tasks.split(" ")[1] === "сауна";
-    console.log("test", test);
+    // console.log("test", test);
     // let [expanded, tasks, finished] = workout;
     return (
       <li className="day-content">
